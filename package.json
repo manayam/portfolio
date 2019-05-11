@@ -1,17 +1,26 @@
 {
-  "name": "modern_portfolio",
+  "name": "modern_portfolio-master",
   "version": "1.0.0",
-  "description": "Responsive portfolio website",
+  "description": "Responsive portfolio draft",
   "main": "index.js",
-  "homepage": "https://manayam.github.io/portfolio-master",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manayam/portfolio.git"
+  },
+  "author": "Ryan Manalastas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manayam/portfolio/issues"
+  },
+  "homepage": "https://github.com/manayam/portfolio#readme",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
   },
-  "author": "Ryan Manalastas",
-  "license": "MIT",
   "dependencies": {
-    "gh-pages": "^1.2.0",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.12.0"
   }
 }
