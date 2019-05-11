@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/manayam/portfolio/issues"
   },
-  "homepage": "https://github.com/manayam/portfolio#readme",
+  "homepage": "https://manayam.github.io/portfolio/",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
