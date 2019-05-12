@@ -55,7 +55,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.jpg");
+      background: url("../dist/img/image5.png");
       border-radius: 50%;
       border: solid 3px #a033ff; }
   .menu .nav-item {
@@ -135,7 +135,7 @@ h2 {
   color: #a033ff; }
 
 a {
-  color: #fff;
+  color: black;
   text-decoration: none; }
 
 header {
@@ -148,6 +148,7 @@ header {
 
 main {
   padding: 4rem;
+  height: 100%;
   min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
@@ -164,7 +165,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -204,7 +205,6 @@ main {
 /* Create three equal columns that sits next to each other */
 .column {
   flex: 33.33%;
-  padding: 5px;
   box-sizing: border-box; }
 
 .boxes {
@@ -281,11 +281,11 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait_small.jpg");
+      background: url("../img/portrait1.png");
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
