@@ -1,0 +1,231 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "IBM Plex Sans", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  height: 100%;
+  line-height: 1.5;
+}
+
+body.bg-black {
+  background: black;
+  color: white;
+}
+
+body.bg-white {
+  background: white;
+  color: black;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+img.crop {
+  width: 250px;
+  height: auto;
+  margin: auto;
+}
+
+.container-index {
+  margin: 0 auto;
+  max-width: 70rem;
+
+  display: grid;
+  grid-gap: 20px;
+}
+
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  font-size: 12px;
+  padding: 5px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5%;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  transition-timing-function: ease-in-out;
+  transition: background-color, color;
+  transition-duration: 0.2s;
+  opacity: 0.9;
+}
+
+#back-to-top i {
+  margin: 3px;
+}
+
+#back-to-top:hover,
+#back-to-top:focus {
+  background-color: black;
+  color: white;
+}
+
+header .logo {
+  margin: 45px 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-size: 3em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.logo a {
+  background-image: linear-gradient(90deg, #ed702d, #ed702d);
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 0 90%;
+  transition: background-size 0.1s ease-in;
+}
+
+.logo a:hover {
+  transition: background-size 0.1s ease-in;
+  background-size: 100% 0.7em;
+
+  /* credits to Erin E. Sullivan for the lovely text-shadow animation 
+  (that very much reminds me of the type from Boys Don't Cry)! */
+  animation: text-shadow 1.2s ease-in-out infinite;
+  text-decoration: none;
+}
+
+@keyframes text-shadow {
+  0% {
+    transform: translateY(0);
+    text-shadow: 0 0 0 #0c2ffb, 0 0 0 #2cfcfd, 0 0 0 #fb203b, 0 0 0 #fefc4b;
+  }
+
+  20% {
+    transform: translateY(-1em);
+    text-shadow: 0 0.125em 0 #0c2ffb, 0 0.25em 0 #2cfcfd, 0 -0.125em 0 #fb203b,
+      0 -0.25em 0 #fefc4b;
+  }
+
+  40% {
+    transform: translateY(0.5em);
+    text-shadow: 0 -0.0625em 0 #0c2ffb, 0 -0.125em 0 #2cfcfd,
+      0 0.0625em 0 #fb203b, 0 0.125em 0 #fefc4b;
+  }
+
+  60% {
+    transform: translateY(-0.25em);
+    text-shadow: 0 0.03125em 0 #0c2ffb, 0 0.0625em 0 #2cfcfd,
+      0 -0.03125em 0 #fb203b, 0 -0.0625em 0 #fefc4b;
+  }
+
+  80% {
+    transform: translateY(0);
+    text-shadow: 0 0 0 #0c2ffb, 0 0 0 #2cfcfd, 0 0 0 #fb203b, 0 0 0 #fefc4b;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* INDEX */
+
+/* top/hero section */
+.top {
+  padding-bottom: 50px;
+}
+
+.hero p {
+  font-size: 1.4em;
+  line-height: 45px;
+}
+
+.links .social {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.6em;
+}
+
+/* work/projects section */
+
+.work {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.work .title {
+  font-weight: 400;
+}
+
+.work .meta {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.work a {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 450px;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+/* footer */
+
+footer {
+  margin: 20px;
+}
+
+footer .left {
+  float: left;
+}
+
+footer .right {
+  float: right;
+  text-align: right;
+}
+
+@media (max-width: 1100px) {
+  .container-index {
+    margin: 30px;
+  }
+
+  .work {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  header .logo {
+    margin: 5px 0;
+  }
+
+  .top {
+    padding-bottom: 20px;
+  }
+
+  .work {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    font-size: 0.9em;
+  }
+}

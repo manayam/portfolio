@@ -1,0 +1,331 @@
+p,
+ul {
+  font-size: 0.9em;
+}
+
+.container-project {
+  margin: 0 auto;
+  max-width: 70rem;
+
+  display: grid;
+  grid-gap: 30px;
+}
+
+.highlight {
+  font-weight: 700;
+}
+
+.left-section {
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.view-button {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-decoration: none;
+  border: 0.1rem solid #111;
+  padding: 1rem;
+  background: none;
+}
+
+.view-button:hover {
+  background: black;
+  color: white;
+}
+
+.title {
+  min-width: 300px;
+  font-size: 2.5em;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+}
+
+.section-title {
+  opacity: 0.2;
+}
+
+.sub-title {
+  font-style: italic;
+  font-size: 1.2em;
+  opacity: 0.2;
+}
+
+/* top breakdown section */
+
+.top {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "title summary summary"
+    "title summary summary"
+    "title grid-left grid-right";
+}
+
+.title-top {
+  grid-area: title;
+}
+
+.summary {
+  grid-area: summary;
+}
+
+.break-left {
+  grid-area: grid-left;
+}
+
+.break-right {
+  grid-area: grid-right;
+}
+
+/* "the client" section */
+
+.client-section {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "title-client client-text client-text"
+    "title-client client-text client-text"
+    "title-client client-list client-list";
+}
+
+.title-client {
+  grid-area: title-client;
+}
+
+.client-text {
+  grid-area: client-text;
+}
+
+.client-list {
+  grid-area: client-list;
+}
+
+/* user interviews + personas section */
+
+.interview-personas-section {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "title-interview interview-text-1 interview-text-1 interview-text-1"
+    "title-interview interview-action interview-action interview-action"
+    "title-interview interview-text-2 interview-text-2 interview-text-2";
+}
+
+.title-interview {
+  grid-area: title-interview;
+}
+
+.interview-text-1 {
+  grid-area: interview-text-1;
+}
+
+.interview-action {
+  grid-area: interview-action;
+}
+
+.interview-text-2 {
+  grid-area: interview-text-2;
+}
+
+/* competitive analysis + mood boards section */
+
+.comp-analysis-section {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "title-comp comp-text comp-text"
+    "title-comp comp-actions comp-actions"
+    "title-comp comp-actions comp-actions";
+}
+
+.comp-title {
+  grid-area: title-comp;
+}
+
+.comp-text {
+  grid-area: comp-text;
+}
+
+.comp-actions {
+  grid-area: comp-actions;
+}
+
+/* sketches + creative brief section */
+
+.lofi-section {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "lofi-title blank"
+    "lofi-title lofi-text"
+    "lofi-title lofi-text";
+}
+
+.lofi-title {
+  grid-area: lofi-title;
+}
+
+.lofi-text {
+  grid-area: lofi-text;
+}
+
+/* hi-fi wireframes + functional specification */
+
+.hifi-section {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "hifi-title hifi-text"
+    "hifi-title hifi-text";
+}
+
+.hifi-title {
+  grid-area: hifi-title;
+}
+
+.hifi-text {
+  grid-area: hifi-text;
+}
+
+/* prototypes + card sort + styling + balancing it all */
+
+.prototyping-section {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "prototype-title styling styling"
+    "prototyle-title user-testing user-testing"
+    "prototpe-title card-sort card-sort";
+}
+
+.prototype-title {
+  grid-area: prototype-title;
+}
+
+.styling-sub {
+  grid-area: styling;
+}
+
+.testing-sub {
+  grid-area: user-testing;
+}
+
+.cardsort-sub {
+  grid-area: card-sort;
+}
+
+/* understanding the mental model of membership section */
+
+.member-section {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "member-title member-text"
+    "member-title member-text"
+    "member-title member-text";
+}
+
+.member-title {
+  grid-area: member-title;
+}
+
+.member-text {
+  grid-area: member-text;
+}
+
+/* final section */
+
+.final-section {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "final-title final-text final-text final-text"
+    "final-title final-text final-text final-text"
+    "final-title final-text final-text final-text";
+}
+
+.final-title {
+  grid-area: final-title;
+}
+
+.final-text {
+  grid-area: final-text;
+}
+
+@media (max-width: 1100px) {
+  .container-project {
+    margin: 30px;
+  }
+
+  .title-top {
+    margin-bottom: 20px;
+  }
+
+  .left-section {
+    max-width: 700px;
+    margin-right: 0;
+  }
+
+  .top {
+    grid-template-areas:
+      "title title"
+      "summary summary"
+      "grid-left grid-right";
+  }
+
+  .client-section {
+    grid-template-areas:
+      "title-client title-client"
+      "client-text client-text"
+      "client-list client-list";
+  }
+
+  .interview-personas-section {
+    grid-template-areas:
+      "title-interview title-interview"
+      "interview-text-1 interview-text-1"
+      "interview-action interview-action"
+      "interview-text-2 interview-text-2";
+  }
+
+  .comp-analysis-section {
+    grid-template-areas:
+      "title-comp title-comp"
+      "comp-text comp-text"
+      "comp-actions comp-actions";
+  }
+
+  .lofi-section {
+    grid-template-areas:
+      "lofi-title lofi-title"
+      "lofi-text lofi-text";
+  }
+
+  .hifi-section {
+    grid-template-areas:
+      "hifi-title hifi-title"
+      "hifi-text hifi-text";
+  }
+
+  .prototyping-section {
+    grid-template-areas:
+      "prototype-title prototype-title"
+      "styling styling"
+      "user-testing user-testing"
+      "card-sort card-sort";
+  }
+
+  .member-section {
+    grid-template-areas:
+      "member-title member-title"
+      "member-text member-text";
+  }
+
+  .final-section {
+    grid-template-areas:
+      "final-title final-title"
+      "final-text final-text";
+  }
+}
