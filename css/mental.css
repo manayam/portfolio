@@ -1,0 +1,259 @@
+p,
+ul,
+ol {
+  font-size: 0.9em;
+}
+
+.container-project {
+  margin: 0 auto;
+  max-width: 70rem;
+
+  display: grid;
+  grid-gap: 30px;
+}
+
+.highlight {
+  font-weight: 700;
+}
+
+.left-section {
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.view-button {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-decoration: none;
+  border: 0.1rem solid #111;
+  padding: 1rem;
+  background: none;
+}
+
+.view-button:hover {
+  background: black;
+  color: white;
+}
+
+.title {
+  min-width: 300px;
+  font-size: 2.5em;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+}
+
+.section-title {
+  opacity: 0.2;
+}
+
+.sub-title {
+  font-style: italic;
+  font-size: 1.2em;
+  opacity: 0.2;
+}
+
+.top {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "title summary summary"
+    "title summary summary"
+    "title grid-left grid-right";
+}
+
+.title-top {
+  grid-area: title;
+}
+
+.summary {
+  grid-area: summary;
+}
+
+.break-left {
+  grid-area: grid-left;
+}
+
+.break-right {
+  grid-area: grid-right;
+}
+
+/* overview section */
+
+.overview-section {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "overview-title overview-text"
+    "overview-title overview-text"
+    "overview-title overview-text";
+}
+
+.overview-title {
+  grid-area: overview-title;
+}
+
+.overview-text {
+  grid-area: overview-text;
+}
+
+/* identify and immersion of the problem */
+.identify-section {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "identify-title identify-text-1"
+    "identify-title identify-text-2";
+}
+
+.identify-title {
+  grid-area: identify-title;
+}
+
+.identify-text-1 {
+  grid-area: identify-text-1;
+}
+
+.identify-text-2 {
+  grid-area: identify-text-2;
+}
+
+/* ideation and design phase */
+.ideation-section {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "ideation-title ideation-text-1"
+    "ideation-title ideation-text-2";
+}
+
+.ideation-text-1 {
+  grid-area: ideation-text-1;
+}
+
+.ideation-text-2 {
+  grid-area: ideation-text-2;
+}
+
+/* pivot and reframing hcw statements */
+.reframe-section {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "reframe-title reframe-1"
+    "reframe-title reframe-2";
+}
+
+.reframe-title {
+  grid-area: reframe-title;
+}
+
+.reframe-1 {
+  grid-area: reframe-1;
+}
+
+.reframe-2 {
+  grid-area: reframe-2;
+}
+
+/* further user research */
+.research-section {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "research-title research-1"
+    "research-title research-2";
+}
+
+.research-title {
+  grid-area: research-title;
+}
+
+.research-1 {
+  grid-area: research-1;
+}
+
+.research-2 {
+  grid-area: research-2;
+}
+
+/* participatory design workshop */
+.workshop-section {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "workshop-title workshop-1"
+    "workshop-title workshop-2";
+}
+
+.workshop-title {
+  grid-area: workshop-title;
+}
+
+.workshop-1 {
+  grid-area: workshop-1;
+}
+
+.workshop-2 {
+  grid-area: workshop-2;
+}
+@media (max-width: 1100px) {
+  .container-project {
+    margin: 30px;
+  }
+
+  .title-top {
+    margin-bottom: 20px;
+  }
+
+  .left-section {
+    max-width: 700px;
+    margin-right: 0;
+  }
+
+  .top {
+    grid-template-areas:
+      "title title"
+      "summary summary"
+      "grid-left grid-right";
+  }
+
+  .overview-section {
+    grid-template-areas:
+      "overview-title overview-title"
+      "overview-text overview-text";
+  }
+
+  .identify-section {
+    grid-template-areas:
+      "identify-title identify-title"
+      "identify-text-1 identify-text-2";
+  }
+
+  .ideation-section {
+    grid-template-areas:
+      "ideation-title ideation-title"
+      "ideation-text-1 ideation-text-1"
+      "ideation-text-2 ideation-text-2";
+  }
+
+  .reframe-section {
+    grid-template-areas:
+      "reframe-title reframe-1"
+      "reframe-title reframe-2";
+  }
+
+  .research-section {
+    grid-template-areas:
+      "research-title research-title"
+      "research-1 research-1"
+      "research-2 research-2";
+  }
+
+  .workshop-section {
+    grid-template-areas:
+      "workshop-title workshop-title"
+      "workshop-1 workshop-1"
+      "workshop-2 workshop-2";
+  }
+}
