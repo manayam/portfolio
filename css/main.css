@@ -182,8 +182,9 @@ header .logo {
 .work a {
   display: grid;
   grid-template-columns: 1fr;
-  height: 450px;
-  grid-template-rows: auto auto 1fr auto;
+  grid-gap: 10px;
+  height: 500px;
+  grid-template-rows: auto auto auto 1fr auto;
 }
 
 /* footer */
