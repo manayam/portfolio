@@ -53,6 +53,8 @@ ol {
   opacity: 0.2;
 }
 
+/* top breakdown section */
+
 .top {
   display: grid;
   grid-gap: 10px;
@@ -239,8 +241,9 @@ ol {
 
   .reframe-section {
     grid-template-areas:
-      "reframe-title reframe-1"
-      "reframe-title reframe-2";
+      "reframe-title reframe-title"
+      "reframe-1 reframe-1"
+      "reframe-2 reframe-2";
   }
 
   .research-section {
