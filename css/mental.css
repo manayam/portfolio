@@ -229,7 +229,8 @@ ol {
   .identify-section {
     grid-template-areas:
       "identify-title identify-title"
-      "identify-text-1 identify-text-2";
+      "identify-text-1 identify-text-1"
+      "identify-text-2 identify-text-2";
   }
 
   .ideation-section {
