@@ -40,6 +40,16 @@ img.crop {
   margin: auto;
 }
 
+.projects img {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+}
+
+.projects img:hover {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
 .container-index {
   margin: 0 auto;
   max-width: 70rem;
