@@ -1,0 +1,48 @@
+/* icon and page styling */
+.logo a:hover {
+    text-shadow: 0 0 5px #ffFAFA;
+    filter: dropshadow(color=#ffFAFA, offx=2, offy=2)
+  }
+ 
+ 
+ 
+body.bg-black {
+    background: #ff7e30;
+}
+ 
+/* content */
+ 
+.hero {
+    display: grid;
+    grid-template-columns: auto 2fr 1fr;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+}
+ 
+.hero p, a {
+    line-height: 30px;
+}
+ 
+.hero .bio, .contact {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.contact-container {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.contact a, .contact p {
+    font-size: 1em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+ 
+.highlight {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+ 
+
