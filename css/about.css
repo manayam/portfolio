@@ -45,4 +45,7 @@ body.bg-black {
     font-weight: 700;
 }
  
-
+#selfPortrait {
+    height: auto;
+    width: 500px;
+}
